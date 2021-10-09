@@ -71,22 +71,23 @@ Phase 1: Basic Setup
 Phase 2 - pool setup
 [x]create a db/table x
 [x]create pool module x
-[]require in server.js x
-[]make GET route w/ SELECT * FROM tableName x
-[]test in browser x
-[]GET call on page load
+[x]require in server.js x
+[x]make GET route w/ SELECT * FROM tableName x
+[x]test in browser x
+[x]GET call on page load
 
 Phase 3 - interface/POST
 
-[]interface for displaying messages x
-[]interface for adding a message x
-[]capture user input & send to server via POST x
-[]input new message into db in POST route s
+[x]interface for displaying messages x
+[x]interface for adding a message x
+[x]capture user input & send to server via POST x
+[x]input new message into db in POST route s
 
 Phase 4 - delete
-[]display messages on DOM x
-[]add a "delete" button with data-id tag x
-[]test clieck handler with $( this ).data( 'id' ) x
-[]send DELETE req w/ ID x
-[]delete message from db x
-[]repeat for PUT x
+[x]display messages on DOM x
+[x]add a "delete" button with data-id tag x
+[x]test clieck handler with $( this ).data( 'id' ) x
+[x]send DELETE req w/ ID x
+[x]delete message from db x
+[x]repeat for PUT x
+

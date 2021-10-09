@@ -5,6 +5,8 @@
     <title>Koalla Holla</title>
     <script src="vendors/jquery-3.3.1.min.js" charset="utf-8"></script>
     <script src="scripts/client.js" charset="utf-8"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
@@ -19,7 +21,11 @@
       <input type="text" id="nameIn" value="" placeholder="Name">
       <input type="text" id="ageIn" value="" placeholder="Age">
       <input type="text" id="genderIn" value="" placeholder="Sex">
-      <input type="text" id="readyForTransferIn" value="" placeholder="Transfer">
+      <label for="readyForTransferIn">Is the koala ready for transfer?</label>
+    <select id="readyForTransferIn">
+      <option value="False">no</option>
+      <option value="True">yes</option>
+    </select>
       <input type="text" id="notesIn" value="" placeholder="Notes">
       <button type="button" id="addButton">Add Koala</button>
     </section>
@@ -41,3 +47,8 @@
     </section>
   </body>
 </html>
+
+
+
+
+

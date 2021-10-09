@@ -10,6 +10,8 @@ $(document).ready(function () {
   $('#viewKoalas').on('click', '.transferButton', transferKoala);
 }); // end doc ready
 
+
+
 function setupClickListeners() {
   $('#addButton').on('click', function () {
     console.log('in addButton on click');
@@ -57,6 +59,18 @@ function getKoalas() {
 
 function saveKoala(newKoala) {
   console.log('in saveKoala', newKoala);
+  if (newKoala.name ==''){
+    alert ('Please fill out name of koala.');
+    return;
+  }//end if
+  if (newKoala.age =='' ){
+    alert ('Please fill out the age of koala.');
+  }//end if
+  if (newKoala.sex =='' ){
+    alert ('Please fill out the age of koala.');
+    return;
+  }//end if
+  
 
   $.ajax({
     method: "POST",

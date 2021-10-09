@@ -19,7 +19,7 @@ app.listen(PORT, () => {
 });
 
 app.get ('/koalas', (req,res)=>{
-  const queryString = `SELECT*FROM koala`;
+  const queryString = `SELECT*FROM koala ORDER BY name ASC`;
   pool.query(queryString).then((results)=>{
     res.send (results.rows);
   }).catch ((err)=>{
@@ -60,3 +60,5 @@ app.put( '/koalas', (req, res)=>{
     res.sendStatus( 500 );
   })
 })
+
+
