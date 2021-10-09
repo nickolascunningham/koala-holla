@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Koalla Holla</title>
+    <script src="vendors/jquery-3.3.1.min.js" charset="utf-8"></script>
+    <script src="scripts/client.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+    <header>
+      <img src="images/icon.png" class="icon" />
+      <h1>Koala Holla</h1>
+      <h3>1976 Llama Comma Lane</h2>
+      <h3>Walla Walla, WA</h2>
+    </header>
+    <section id="addKoala">
+      <h2>Add Koala</h2>
+      <input type="text" id="nameIn" value="" placeholder="Name">
+      <input type="text" id="ageIn" value="" placeholder="Age">
+      <input type="text" id="genderIn" value="" placeholder="Sex">
+      <input type="text" id="readyForTransferIn" value="" placeholder="Transfer">
+      <input type="text" id="notesIn" value="" placeholder="Notes">
+      <button type="button" id="addButton">Add Koala</button>
+    </section>
+    <section>
+      <h2>All Koalas</h2>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Age</th>
+            <th scope="col">Sex</th>
+            <th scope="col">Ready for Transfer</th>
+            <th scope="col">Notes</th>
+          </tr>
+        </thead>
+        <tbody id="viewKoalas">
+        </tbody>
+      </table>
+    </section>
+  </body>
+</html>
